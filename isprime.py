@@ -27,6 +27,7 @@ def is_prime_regex(n: int) -> bool:
 
     return not re.findall(r"^.?$|^(..+?)\1+$", n * "1")
 
+
 def main():
     args = parse_args()
     normal_primes = []
