@@ -8,6 +8,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max", type=int, default=100)
     return parser.parse_args()
 
+
 def is_prime_normal(n: int) -> bool:
     if n == 1:
         return False
@@ -38,7 +39,7 @@ def main():
             normal_primes.append(i)
         if is_prime_regex(i):
             regex_primes.append(i)
-    
+
     if normal_primes == regex_primes:
         print("Both methods have determined all primes are the same.")
         print(f"The number of primes found was: {len(normal_primes)}")
@@ -49,6 +50,7 @@ def main():
         print(f"The number of primes found using regex was: {len(regex_primes)}")
         print(f"The primes using mathematics are: {normal_primes}")
         print(f"The primes using regex are: {regex_primes}")
+
 
 if __name__ == "__main__":
     main()
