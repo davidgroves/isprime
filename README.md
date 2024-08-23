@@ -3,9 +3,9 @@
 This is a very silly repo put together after I was told `^.?$|^(..+?)\1+$` was a python regex that determines if positive integers are prime.
 In order to do it, you need to feed it a string of 1's equal in length to the value of the number to check.
 
-So for example, to check if 7 is prime, you would check `1111111`.
+So for example, to check if 7 is prime, you would check `1111111`. If the regex has matches, it is NOT prime. If it has no matches, it IS prime.
 
-If the regex has matches, it is NOT prime. If it has no matches, it IS prime.
+This was built in around 20mins to check if this was true.
 
 ## Setup
 
